@@ -1,4 +1,10 @@
 import 'package:face_book/Domai/custom_text_style.dart';
+import 'package:face_book/screens/tabs/friends_screen.dart';
+import 'package:face_book/screens/tabs/home_screen.dart';
+import 'package:face_book/screens/tabs/notification_screen.dart';
+import 'package:face_book/screens/tabs/profile_screen.dart';
+import 'package:face_book/screens/tabs/store_screen.dart';
+import 'package:face_book/screens/tabs/video_screen.dart';
 import 'package:flutter/material.dart';
 
 class DashBordScreen extends StatefulWidget {
@@ -70,7 +76,12 @@ class _DashBordScreenState extends State<DashBordScreen> {
           body: TabBarView(
             children: 
             [
-              
+              HomeScreen(),
+              VideoScreen(),
+              FriendsScreen(),
+              StoreScreen(),
+              NotificationScreen(),
+              ProfileScreen(),
             ]
             ),
         ),
