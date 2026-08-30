@@ -136,7 +136,10 @@ class HomeScreen extends StatelessWidget {
              SizedBox(
         height: 5,
              ),
-             UserPostCard(),
+             UserPostCard(userName: 'soname', userProfile: 'assets/images/girl5.jpeg', userPost: 'assets/images/girl5.jpeg',),
+              UserPostCard(userName: 'Beatuy', userProfile:'assets/images/pexels-soldiervip-1386599.jpg', userPost:'assets/images/pexels-harsh-raj-gond-218020-1485031.jpg',),
+             UserPostCard(userName: 'mariao', userProfile: 'assets/images/pexels-eliasdecarvalho-1375849.jpg', userPost: 'assets/images/pexels-soldiervip-1372137.jpg'),
+              UserPostCard(userName: 'nadon', userProfile: 'assets/images/pexels-leonnebrito-1844012.jpg', userPost: 'assets/images/pexels-leonnebrito-1844012.jpg'),
         ],
         ),
       ),
