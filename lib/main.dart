@@ -1,7 +1,9 @@
+import 'package:face_book/screens/dash_bord_screen.dart';
 import 'package:face_book/screens/tabs/video_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+   WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-           body:VideoScreen(),
+           body:DashBordScreen(),
       ),
      
     );
