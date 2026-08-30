@@ -1,4 +1,5 @@
 import 'package:face_book/Domai/custom_text_style.dart';
+import 'package:face_book/widgets/friend_request_card.dart';
 import 'package:flutter/material.dart';
 
 class FriendsScreen extends StatefulWidget {
@@ -111,7 +112,7 @@ class _FriendsScreenState extends State<FriendsScreen> {
            ),
          ),
          
-         
+         FriendRequestCard(),
         ],
       ),
     );
