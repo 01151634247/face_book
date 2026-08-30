@@ -18,7 +18,7 @@ class _FriendsScreenState extends State<FriendsScreen> {
           Column(
           children: [
            const SizedBox(
-              height: 20,
+              height: 5,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 5),

@@ -1,5 +1,6 @@
 import 'package:face_book/screens/dash_bord_screen.dart';
 import 'package:face_book/screens/tabs/friends_screen.dart';
+import 'package:face_book/screens/tabs/store_screen.dart';
 import 'package:face_book/screens/tabs/video_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-           body:FriendsScreen(),
+           body:StoreScreen(),
       ),
      
     );
