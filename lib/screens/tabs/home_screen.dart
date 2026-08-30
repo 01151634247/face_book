@@ -1,4 +1,5 @@
 import 'package:face_book/Domai/custom_text_style.dart';
+import 'package:face_book/widgets/others_user_story_card.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -52,6 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
          SizedBox(
           height: 200,
            child: ListView(
+            physics: BouncingScrollPhysics(),
             scrollDirection: Axis.horizontal,
             children: [
               SizedBox(
@@ -65,8 +67,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           borderRadius: BorderRadius.only(topLeft: Radius.circular(12),topRight: Radius.circular(12),),
                           image: DecorationImage(image: AssetImage('assets/images/pexels-ira-dulger-647031-1452129.jpg'),fit:BoxFit.cover),
                         ),
-                        height: 100,
-                        width: 120,
+                       /// height: 100,
+                       // width: 120,
                        ),
                       Positioned(
                         top: 85,
@@ -89,13 +91,53 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                 ),
+                
+                 
               ),
+              OthersUserStoryCard(
+              userName: 'priya',
+              image: 'assets/images/girls3.jpg',
+              
+             ),
+             //
+             OthersUserStoryCard(
+              userName: 'pogy',
+              image: 'assets/images/pexels-soldiervip-1372137.jpg',
+              
+             ),
+
+             //
+             OthersUserStoryCard(
+              userName: 'mraua',
+              image: 'assets/images/pexels-soldiervip-1386599.jpg',
+              
+             ),
+              OthersUserStoryCard(
+              userName: 'merciaa',
+              image: 'assets/images/girls3.jpg',
+              
+             ),
+             //
+             OthersUserStoryCard(
+              userName: 'madona',
+              image: 'assets/images/pexels-soldiervip-1372137.jpg',
+              
+             ),
+
+             //
+             OthersUserStoryCard(
+              userName: ' shrma',
+              image: 'assets/images/pexels-soldiervip-1386599.jpg',
+              
+             ),
+
+
             ],
-           
            ),
          ),
-     
-      ],),
+     Divider(thickness: 3,)
+      ],
+      ),
     );
   }
 }
