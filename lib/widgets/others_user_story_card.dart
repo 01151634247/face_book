@@ -1,16 +1,11 @@
 import 'package:face_book/Domai/custom_text_style.dart';
 import 'package:flutter/material.dart';
 
-class OthersUserStoryCard extends StatefulWidget {
+class OthersUserStoryCard extends StatelessWidget {
   String userName;
   String image;
    OthersUserStoryCard({super.key,required this.userName,required this.image});
 
-  @override
-  State<OthersUserStoryCard> createState() => _OthersUserStoryCardState();
-}
-
-class _OthersUserStoryCardState extends State<OthersUserStoryCard> {
   @override
   Widget build(BuildContext context) {
     return  SizedBox(
@@ -23,7 +18,7 @@ class _OthersUserStoryCardState extends State<OthersUserStoryCard> {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(topLeft: Radius.circular(12),topRight: Radius.circular(12),
                 bottomLeft:  Radius.circular(12),bottomRight:  Radius.circular(12),),
-                image: DecorationImage(image: AssetImage(widget.image),fit:BoxFit.cover),
+                image: DecorationImage(image: AssetImage(image),fit:BoxFit.cover),
               ),
              ),
             Positioned(
@@ -35,7 +30,7 @@ class _OthersUserStoryCardState extends State<OthersUserStoryCard> {
                 decoration: BoxDecoration(
                   color: Colors.blueAccent,
                   borderRadius: BorderRadius.circular(100),
-                  image: DecorationImage(image: AssetImage(widget.image),fit: BoxFit.cover),
+                  image: DecorationImage(image: AssetImage(image),fit: BoxFit.cover),
                   border: Border.all(
                     color: Colors.blueAccent,width: 2,
                   )
@@ -45,7 +40,7 @@ class _OthersUserStoryCardState extends State<OthersUserStoryCard> {
               Positioned(
                 bottom: 4,
                 left: 3,
-                child: Text(widget.userName,style: text.textStyle15.copyWith(
+                child: Text(userName,style: text.textStyle15.copyWith(
                   color: Colors.white
                 ),)),
           ],
