@@ -38,7 +38,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
             child: Text('New',style: text.textStyle25,),
           ),
 
-          NotificationCard(),
+          NotificationCard(userProfile: 'assets/images/girls3.jpg', icon: 'assets/icons/chat (1).png', title: 'how are you again how are you again how are you again how are you again', day: '5d',),
         ],
       ),
     );
