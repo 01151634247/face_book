@@ -13,33 +13,46 @@ class _NotificationScreenState extends State<NotificationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const SizedBox(
-            height: 15,
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-              Text('Notification',style: text.textStyle30,),
-             const Icon(Icons.search_rounded,size: 30,color: Colors.black,),
-            ],
+      body:SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const SizedBox(
+              height: 15,
             ),
-
-          ),
-         const SizedBox(
-          height:30 ,
-         ),
-          Padding(
-            padding: const EdgeInsets.only(left: 5),
-            child: Text('New',style: text.textStyle25,),
-          ),
-
-          NotificationCard(userProfile: 'assets/images/girls3.jpg', icon: 'assets/icons/chat (1).png', title: 'how are you again how are you again how are you again how are you again', day: '5d',),
-        ],
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                Text('Notification',style: text.textStyle30,),
+               const Icon(Icons.search_rounded,size: 30,color: Colors.black,),
+              ],
+              ),
+        
+            ),
+           const SizedBox(
+            height:30 ,
+           ),
+            Padding(
+              padding: const EdgeInsets.only(left: 5,bottom: 5),
+              child: Text('New',style: text.textStyle25,),
+            ),
+        
+            NotificationCard(userProfile: 'assets/images/girls3.jpg', icon: 'assets/icons/chat (1).png', title: 'how are you again how are you again how are you again how are you again', day: '5d',),
+              NotificationCard(userProfile: 'assets/images/girl1.jpeg', icon: 'assets/icons/chat (1).png', title: 'how are you again how are you again how are you again how are you again', day: '3d',),
+                NotificationCard(userProfile: 'assets/images/pexels-eliasdecarvalho-1375849.jpg', icon: 'assets/icons/chat (1).png', title: 'how are you again how are you again how are you again how are you again', day: '1d',),
+                  NotificationCard(userProfile: 'assets/images/woman.webp', icon: 'assets/icons/chat (1).png', title: 'how are you again how are you again how are you again how are you again', day: '5d',),
+                    NotificationCard(userProfile: 'assets/images/pexels-soldiervip-1372137.jpg', icon: 'assets/icons/chat (1).png', title: 'how are you again how are you again how are you again how are you again', day: '7d',),
+                      NotificationCard(userProfile: 'assets/images/pexels-pixabay-247908.jpg', icon: 'assets/icons/chat (1).png', title: 'how are you again how are you again how are you again how are you again', day: '10d',),
+                       NotificationCard(userProfile: 'assets/images/girls3.jpg', icon: 'assets/icons/chat (1).png', title: 'how are you again how are you again how are you again how are you again', day: '5d',),
+              NotificationCard(userProfile: 'assets/images/girl1.jpeg', icon: 'assets/icons/chat (1).png', title: 'how are you again how are you again how are you again how are you again', day: '3d',),
+                NotificationCard(userProfile: 'assets/images/pexels-eliasdecarvalho-1375849.jpg', icon: 'assets/icons/chat (1).png', title: 'how are you again how are you again how are you again how are you again', day: '1d',),
+                  NotificationCard(userProfile: 'assets/images/woman.webp', icon: 'assets/icons/chat (1).png', title: 'how are you again how are you again how are you again how are you again', day: '5d',),
+                    NotificationCard(userProfile: 'assets/images/pexels-soldiervip-1372137.jpg', icon: 'assets/icons/chat (1).png', title: 'how are you again how are you again how are you again how are you again', day: '7d',),
+                      NotificationCard(userProfile: 'assets/images/pexels-pixabay-247908.jpg', icon: 'assets/icons/chat (1).png', title: 'how are you again how are you again how are you again how are you again', day: '10d',),
+          ],
+        ),
       ),
     );
   }
